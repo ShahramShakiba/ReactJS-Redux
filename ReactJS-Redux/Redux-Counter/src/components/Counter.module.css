@@ -1,23 +1,27 @@
 .counter {
   margin: 5rem auto;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px -8px 18px rgba(230, 230, 230, 0.2);
   width: 40rem;
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 90% / 9%;
+  padding: 2rem;
   text-align: center;
   background-color: #f4f0fa;
 }
 
 .counter h1 {
+  width: 10rem;
   text-transform: uppercase;
-  color: #575757;
-  margin: 0;
+  color: #d3ac01;
+  margin: 0 auto;
   font-size: 1rem;
+  border-bottom: 2px solid #d3ac01;
+  padding: 5px;
+  border-radius: 30% / 18%;
 }
 
 .value {
   font-size: 2rem;
-  color: #3c0080;
-  margin: 2rem 0;
+  color: #161616;
+  margin: 4rem 0;
   font-weight: bold;
 }

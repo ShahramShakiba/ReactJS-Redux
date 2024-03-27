@@ -43,7 +43,15 @@
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Redux Basics & Using Redux with React_
   - Redux is all about having one ` Central Data(State) Store ` in your Application.
   - _Install_: ` npm install redux react-redux `
-  - Creating a Redux Store for React with _createStore_ <br/><br/>
+  - Creating a Redux Store for React with _createStore_
+  - Using Redux Data in React Components via _useSelector_
+  - Dispatching Actions From Inside Components via _useDispatch_
+  - Redux with Class-Based Components
+  - Attaching Payloads to Actions
+  - Working with Multiple State Properties | Counter & showCounter
+  - Redux Challenges in bigger Apps:
+    1. Clashing Identifiers Name
+    2. Unmaintainable big Redux File  <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Working with Redux Toolkit_
  
 

@@ -2,6 +2,7 @@
 // import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux';
 import classes from './Counter.module.css';
+import { INCREMENT } from '../Store/redux';
 
 export default function Counter() {
   // Get access to data that managed in Redux store
@@ -9,7 +10,9 @@ export default function Counter() {
   const showCounter = useSelector((state) => state.showCounter);
   const dispatch = useDispatch();
 
-  const handleIncrement = () => {};
+  const handleIncrement = () => {
+    dispatch({ type: INCREMENT });
+  };
 
   const handleIncrease = () => {
     dispatch({ type: 'INCREASE', amount: 10 });
@@ -27,13 +30,17 @@ export default function Counter() {
     <main className={classes.counter}>
       <h1> Redux - Counter </h1>
 
-      {showCounter && <div className={classes.value}> {counter} </div>}
+      {showCounter && (
+        <>
+          <div className={classes.value}> {counter} </div>
 
-      <div>
-        <button onClick={handleDecrement}> Decrement ⇣ </button>
-        <button onClick={handleIncrease}> ⇡ Increase by 10 </button>
-        <button onClick={handleIncrement}> ⇡ Increment </button>
-      </div>
+          <div>
+            <button onClick={handleDecrement}> Decrement ⇣ </button>
+            <button onClick={handleIncrease}> ⇡ Increase by 10 </button>
+            <button onClick={handleIncrement}> ⇡ Increment </button>
+          </div>
+        </>
+      )}
 
       <button onClick={toggleCounterHandler}> Toggle Counter </button>
     </main>

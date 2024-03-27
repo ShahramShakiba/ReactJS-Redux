@@ -2,7 +2,7 @@
   margin: 5rem auto;
   box-shadow: -2px -8px 18px rgba(230, 230, 230, 0.2);
   width: 40rem;
-  border-radius: 90% / 9%;
+  border-radius: 90% / 7%;
   padding: 2rem;
   text-align: center;
   background-color: #f4f0fa;
@@ -16,7 +16,7 @@
   width: 18rem;
   text-transform: uppercase;
   color: #f09d03;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   font-size: 1.5rem;
   border-bottom: 10px dotted #f09d03;
   padding: 10px;

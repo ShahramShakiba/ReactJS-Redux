@@ -11,6 +11,11 @@ export default function Counter() {
   const handleIncrement = () => {
     dispatch({ type: 'INCREMENT' });
   };
+
+  const handleIncrease = () => {
+    dispatch({ type: 'INCREASE', amount: 10 });
+  };
+
   const handleDecrement = () => {
     dispatch({ type: 'DECREMENT' });
   };
@@ -25,6 +30,7 @@ export default function Counter() {
 
       <div>
         <button onClick={handleDecrement}> Decrement ⇣ </button>
+        <button onClick={handleIncrease}> ⇡ Increase by 10 </button>
         <button onClick={handleIncrement}> ⇡ Increment </button>
       </div>
 
@@ -34,8 +40,8 @@ export default function Counter() {
 }
 
 /* useSelector
-* - React Redux will create a subscription to the Redux store's state for this component, and get the value of `counter` key 
-*/
+ * - React Redux will create a subscription to the Redux store's state for this component, and get the value of `counter` key
+ */
 
 /* Redux with "Class-Based Component"
 class Counter extends Component {

@@ -6,17 +6,21 @@
   padding: 2rem;
   text-align: center;
   background-color: #f4f0fa;
+
+  & button {
+    margin: 1rem 2rem;
+  }
 }
 
 .counter h1 {
-  width: 10rem;
+  width: 18rem;
   text-transform: uppercase;
-  color: #d3ac01;
+  color: #f09d03;
   margin: 0 auto;
-  font-size: 1rem;
-  border-bottom: 2px solid #d3ac01;
-  padding: 5px;
-  border-radius: 30% / 18%;
+  font-size: 1.5rem;
+  border-bottom: 10px dotted #f09d03;
+  padding: 10px;
+  border-radius: 30% / 14%;
 }
 
 .value {

@@ -42,7 +42,8 @@
   - Subscribing Components are notified that they can → _"Update the UI"_ <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Redux Basics & Using Redux with React_
   - Redux is all about having one ` Central Data(State) Store ` in your Application.
-  - _Install_: ` npm install redux react-redux ` <br/><br/>
+  - _Install_: ` npm install redux react-redux `
+  - Creating a Redux Store for React with _createStore_ <br/><br/>
 - <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Working with Redux Toolkit_
  
 

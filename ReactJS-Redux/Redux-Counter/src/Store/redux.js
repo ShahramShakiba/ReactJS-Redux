@@ -1,10 +1,8 @@
-import { createStore } from 'redux';
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, configureStore } from '@reduxjs/toolkit';
 
 const initialState = { counter: 0, showCounter: true };
-export const INCREMENT = 'INCREMENT';
 
-createSlice({
+const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
@@ -22,6 +20,17 @@ createSlice({
     },
   },
 });
+
+const store = configureStore({
+  reducer: counterSlice.reducer,
+});
+export default store;
+
+/* Create Function-Reducer only by Redux
+import { createStore } from 'redux';
+
+const initialState = { counter: 0, showCounter: true };
+export const INCREMENT = 'INCREMENT';
 
 const counterReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -56,3 +65,4 @@ const counterReducer = (state = initialState, action) => {
 
 const store = createStore(counterReducer);
 export default store;
+*/

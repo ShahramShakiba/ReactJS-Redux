@@ -6,11 +6,10 @@ import classes from './Counter.module.css';
 export default function Counter() {
   // Get access to data that managed in Redux store
   const counter = useSelector((state) => state.counter);
+  const showCounter = useSelector((state) => state.showCounter);
   const dispatch = useDispatch();
 
-  const handleIncrement = () => {
-    dispatch({ type: 'INCREMENT' });
-  };
+  const handleIncrement = () => {};
 
   const handleIncrease = () => {
     dispatch({ type: 'INCREASE', amount: 10 });
@@ -20,13 +19,15 @@ export default function Counter() {
     dispatch({ type: 'DECREMENT' });
   };
 
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: 'TOGGLE' });
+  };
 
   return (
     <main className={classes.counter}>
-      <h1> Redux Counter </h1>
+      <h1> Redux - Counter </h1>
 
-      <div className={classes.value}> {counter} </div>
+      {showCounter && <div className={classes.value}> {counter} </div>}
 
       <div>
         <button onClick={handleDecrement}> Decrement ⇣ </button>

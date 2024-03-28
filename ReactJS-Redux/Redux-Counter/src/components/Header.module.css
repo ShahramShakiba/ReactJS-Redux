@@ -11,7 +11,7 @@
 
   & h1 {
     color: #f7b501;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -24,13 +24,13 @@
 }
 
 .header li {
-  margin: 0 1rem;
+  margin: 0 0.7rem;
 }
 
 .header a {
   text-decoration: none;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   transition: all 0.2s ease-in;
 }
 

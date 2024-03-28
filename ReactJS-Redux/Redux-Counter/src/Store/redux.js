@@ -1,56 +1,15 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit';
-
-const initialCounterState = { counter: 0, showCounter: true };
-const initialAuthState = { isAuthenticated: false };
-
-//preparing global State | create unique action-identifier for different reducers
-const counterSlice = createSlice({
-  //identifier of that piece of state
-  name: 'counter',
-
-  initialState: initialCounterState,
-
-  //all reducers this slice needs
-  reducers: {
-    increment(state) {
-      state.counter++;
-    },
-    decrement(state) {
-      state.counter--;
-    },
-    increase(state, action) {
-      state.counter = state.counter + action.payload;
-    },
-    toggleCounter(state) {
-      state.showCounter = !state.showCounter;
-    },
-  },
-});
-
-const authSlice = createSlice({
-  name: 'authentication',
-  initialState: initialAuthState,
-  reducers: {
-    login(state) {
-      state.isAuthenticated = true;
-    },
-    logout(state) {
-      state.isAuthenticated = false;
-    },
-  },
-});
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './counterSlice';
+import authReducer from './authSlice';
 
 //merging multiple reducers into 1 reducer
 const store = configureStore({
   //expected property
   reducer: {
-    counter: counterSlice.reducer,
-    auth: authSlice.reducer,
+    counter: counterReducer,
+    auth: authReducer,
   },
 });
-
-export const counterActions = counterSlice.actions;
-export const authActions = authSlice.actions;
 
 export default store;
 

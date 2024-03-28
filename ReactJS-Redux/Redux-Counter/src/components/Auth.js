@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import classes from './Auth.module.css';
-import { authActions } from '../Store/redux';
+import { authActions } from '../Store/authSlice';
 
 export default function Auth() {
   const dispatch = useDispatch();

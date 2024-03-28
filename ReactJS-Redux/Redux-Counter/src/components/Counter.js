@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import classes from './Counter.module.css';
-import { counterActions } from '../Store/redux';
+import { counterActions } from '../Store/counterSlice';
 
 export default function Counter() {
   // Get access to data that managed in Redux store

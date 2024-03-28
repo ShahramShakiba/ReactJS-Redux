@@ -10,15 +10,19 @@
 }
 
 .price {
-  border-radius: 30px;
-  padding: 0.15rem 1.5rem;
-  background-color: #3a3a3a;
-  color: white;
-  font-size: 1.5rem;
+  border-radius: 18% / 75%;
+  padding: 0.35rem 1.1rem;
+  background-color: #529cc7;
+  color: #062925;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: -3px 2px 10px rgba(0, 0, 0, 0.55);
+  border: 1px solid #d2e5f0;
 }
 
 .item p {
-  color: #3a3a3a;
+  color: #02221e;
+  margin-bottom: 2rem;
 }
 
 .actions {

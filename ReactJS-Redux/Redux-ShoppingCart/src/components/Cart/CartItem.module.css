@@ -1,18 +1,20 @@
 .item {
-  margin: 1rem 0;
+  margin: 0.8rem 0 1rem;
   background-color: #575757;
-  padding: 1rem;
-}
+  padding: 0.5rem 1.5rem;
+  border-radius: 4% / 95%;
 
-.item h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.75rem;
-}
+  & h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
 
-.item header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .details {
@@ -22,16 +24,16 @@
 }
 
 .quantity span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.itemprice {
+.itemPrice {
   font-weight: normal;
   font-size: 1rem;
   font-style: italic;
@@ -45,10 +47,12 @@
 
 .actions button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #318177;
   margin-left: 0.5rem;
   padding: 0.15rem 1rem;
-  color: white;
+  color: #1ad1b9;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in;
 }
 
 .actions button:hover,

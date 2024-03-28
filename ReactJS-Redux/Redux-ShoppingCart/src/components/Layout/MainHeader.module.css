@@ -5,11 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #252424;
+  background-color: #242424;
+  margin-bottom: 5rem;
+  box-shadow: 0 12px 18px rgba(49, 49, 49, 0.5);
 }
 
 .header h1 {
-  color: white;
+  color: #0698ec;
 }
 
 .header ul {

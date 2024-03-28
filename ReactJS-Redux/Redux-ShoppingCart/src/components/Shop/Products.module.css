@@ -1,8 +1,33 @@
-.products h2 {
-  color: white;
-  margin: 2rem auto;
-  text-align: center;
-  text-transform: uppercase;
+.products {
+  & h2 {
+    color: #529cc7;
+    margin: 6rem auto 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & header {
+    color: #054d43;
+    margin-bottom: 1rem;
+  }
+
+  & button {
+    background: #d5dddc;
+    color: #04a18c;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    border-radius: 68px / 8%;
+    border: 2px solid #04a18c;
+  }
+
+  & button:hover {
+    border-color: #2183bb;
+    color: #2183bb;
+  }
+}
+
+.products .item {
+  border-radius: 5% / 90%;
 }
 
 .products ul {

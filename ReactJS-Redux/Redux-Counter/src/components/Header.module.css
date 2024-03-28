@@ -4,9 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3c0080;
+  background-color: #29282b;
   color: white;
   padding: 0 10%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+  & h1 {
+    color: #f7b501;
+    font-size: 2.2rem;
+  }
 }
 
 .header ul {
@@ -25,20 +31,23 @@
   text-decoration: none;
   color: white;
   font-size: 1.25rem;
+  transition: all 0.2s ease-in;
 }
 
 .header a:hover,
 .header a:active {
-  color: #b864da;
+  color: #ffbb00;
 }
 
 .header button {
-  font-size: 1.25rem;
-  background-color: #ffbb00;
+  font-size: 1.2rem;
+  background-color: #c4981f;
   border: 1px solid #ffbb00;
-  padding: 0.5rem 1.5rem;
+  padding: 0.4rem 0.8rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   color: #2c2922;
+  transition: all 0.2s ease-in;
+  font-weight: normal;
 }
 
 .header button:hover,

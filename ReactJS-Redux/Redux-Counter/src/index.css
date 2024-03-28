@@ -18,16 +18,16 @@ button {
   color: white;
   padding: 0.7rem 1.2rem;
   border-radius: 90% / 15%;
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
   letter-spacing: 0.5px;
-  box-shadow: 4px -2px 15px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -2px 15px 2px rgba(0, 0, 0, 0.4);
   font-weight: bold;
 }
 
 button:hover,
 button:active {
-  background-color: #d8b800;
-  border-bottom-color: rgba(245, 245, 245, 0.466);
-  color: #0a0a0a;
+  background-color: #42403a;
+  color: rgb(240, 214, 180);
+  border-bottom-color: rgba(245, 245, 245, 0.726);
   box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.6);
 }

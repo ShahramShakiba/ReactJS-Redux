@@ -4,9 +4,9 @@ import authReducer from './authSlice';
 
 //merging multiple reducers into 1 reducer
 const store = configureStore({
-  //expected property
+  //one root expected property
   reducer: {
-    counter: counterReducer,
+    counter: counterReducer, // key-name: reducer-fn
     auth: authReducer,
   },
 });

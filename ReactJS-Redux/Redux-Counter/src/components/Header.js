@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className={classes.header}>
-      <h1> Redux Auth </h1>
+      <h1> Redux Authentication </h1>
 
       {isAuth && (
         <nav>

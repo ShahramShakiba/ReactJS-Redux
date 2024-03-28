@@ -2,8 +2,17 @@
   margin: 5rem auto;
   box-shadow: 0 6px 8px rgba(117, 117, 117, 0.4);
   width: 40rem;
-  border-radius: 90% / 25%;
-  padding: 1rem;
+  border-radius: 90% / 7%;
+  padding: 1rem 5rem;
   text-align: center;
-  background-color: #f4f0fa;
+  background-color: #e3e1e6;
+
+  & h2 {
+    color: rgb(199, 164, 8);
+  }
+
+  & p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
 }

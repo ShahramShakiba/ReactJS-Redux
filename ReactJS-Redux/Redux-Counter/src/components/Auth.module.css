@@ -3,7 +3,7 @@
   box-shadow: 0 6px 18px rgba(133, 133, 133, 0.4);
   width: 25rem;
   border-radius: 70% / 5%;
-  padding: 1rem;
+  padding: 0.7rem;
   text-align: center;
   background-color: #f4f0fa;
 
@@ -21,7 +21,7 @@
   color: #616161;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
-  margin-top: 1.5rem;
+  margin-top: 1.1rem;
 }
 
 .control input {

@@ -9,38 +9,39 @@
 <br/>
 
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
- > ⒈ _Redux Counter =_ <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ Managing App-Wide State with _Redux_ } <br/>
+ > ⒈ { _Redux Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Redux Authentication_ } = <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ Managing App-Wide State with _Redux_ } <br/>
 
   > ⒉ _... =_  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{_..._ } <br/>
 
 <br/><br/>
 ***
-<!--===================== Redux Counter =============================-->
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Redux Counter_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
-### _What is Redux?_
-> 🧩 Redux is a "State" management system for _Cross-Component_ or _App-Wide_ state. <br/>
-- _` Local State `_ : 
-  -  State belongs to a single component - listening to a User-input via _useState & useReducer_  
-- _` Cross-component State `_ : 
-  - State affecting multiple components - Open/Close Modal overlay via _prop drilling_ or "React-Context" & "Redux" 
-- _` App-wide State `_ : 
-  - State affecting the entire App - User Authentication via _prop drilling_ or "React-Context" & "Redux"  <br/>
+<!--===================== Redux Counter | Redux Authentication =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Redux Counter_ & _Redux Authentication_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+> [!NOTE] 
+> _Redux_ is a "State Management System" for Cross-Component or App-Wide State. 
+- _Local State_: &nbsp; State belongs to a single component
+  - listening to a User-input via _useState & useReducer_  
+- _Cross-component State_: &nbsp; State affecting multiple components 
+  - Open/Close Modal overlay via _prop drilling_ or "React-Context" & "Redux" 
+- _App-wide State_: &nbsp; State affecting the entire App 
+  - User Authentication via _prop drilling_ or "React-Context" & "Redux"  <br/><br/>
 
-#### For this project, my goal is on managing App-Wide State with _Redux_. <br/>
-<br/>
+ > #### For this project, my goal is on managing App-Wide State with _Redux_. <br/>
+ 
+> [!IMPORTANT]
+> _Which Concepts in Have I Covered_:  
 
-> 🗝️ Which Concepts in Have I Covered :
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Why would you use Redux?_
-  - _React-Context_ has some potential disadvantages
-    1. ` Complex Setup & Management: ` Can lead to _deeply nested JSX Providers_ or _fat "Context Provider"_ Components 
-    2. ` Performance: ` It's not optimized for _High-Frequency State Changes_ - Changes that happen more frequently <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _How Redux Works?_
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Why would you use Redux?_
+- _React-Context_ has some potential disadvantages
+   1. ` Complex Setup & Management: ` Can lead to _deeply nested JSX Providers_ or _fat "Context Provider"_ Components 
+   2. ` Performance: ` It's not optimized for _High-Frequency State Changes_ - Changes that happen more frequently 
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _How Redux Works?_
   - Components set up "Subscriptions" to → _"Central Store"_ - They subscribe to the Store
   - Then, Components dispatch an → _"Action"_
   - Redux forward that action to → _"Reducer Function"_
   - Reducer Function updates the State in → _"Central Data Store"_ 
-  - Subscribing Components are notified that they can → _"Update the UI"_ <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Redux Basics & Using Redux with React_
+  - Subscribing Components are notified that they can → _"Update the UI"_ 
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Redux Basics & Using Redux with React_
   - Redux is all about having one ` Central Data(State) Store ` in your Application.
   - _Install_: ` npm install redux react-redux `
   - Creating a Redux Store for React with _` createStore `_
@@ -51,14 +52,14 @@
   - Working with Multiple State Properties | Counter & showCounter
   - Redux Challenges in bigger Apps:
     1. Clashing Identifiers Name
-    2. Unmaintainable big Redux File  <br/><br/>
-- <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Working with Redux Toolkit_
+    2. Unmaintainable big Redux File 
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Working with Redux Toolkit_
   - _Install_: ` npm install @reduxjs/toolkit `
-  - Adding State Slices using Redux-Toolkit | _` createSlice `_
-  - Connecting Redux-Toolkit State to the Store using _` configureStore `_
+  - Adding State Slices using Redux-Toolkit | _` createSlice `_: Preparing Global State
+  - Connecting Redux-Toolkit State to the Store | _` configureStore `_: Merging Multiple Reducers into One Reducer
   - Migrating Everything To Redux Toolkit | Configure counterActions to _Dispatching Actions_
- 
-
+  - Working with Multiple Slices | authenticationSlice & counterSlice
+  - Reading & Dispatching From A New Slice | authSlice
 
 <br/>
 

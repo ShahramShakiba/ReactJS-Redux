@@ -11,7 +11,7 @@
  ###  _Projects_ &nbsp; <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="28" >  
  > ⒈ { _Redux Counter_, <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Redux Authentication_ } = <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ Managing App-Wide State with _Redux_ } <br/>
 
-  > ⒉ _... =_  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{_..._ } <br/>
+  > ⒉ _Redux ShoppingCart_ =  <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🏷️{ _Redux Deep Dive_ } <br/>
 
 <br/><br/>
 ***
@@ -26,7 +26,7 @@
 - _App-wide State_: &nbsp; State affecting the entire App 
   - User Authentication via _prop drilling_ or "React-Context" & "Redux"  <br/><br/>
 
- > #### For this project, my goal is on managing App-Wide State with _Redux_. <br/>
+ > #### For this project, my goal is on Managing App-Wide State with _Redux_. <br/>
  
 > [!IMPORTANT]
 > _Which Concepts in Have I Covered_:  
@@ -75,8 +75,41 @@ https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/6fe74162-1203-4
 
   <br/> 
 
+***
+<!--===================== Redux ShoppingCart =============================-->
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Redux ShoppingCart_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
+> [!NOTE] 
+> #### In _Redux_, Reducers must be pure, _Side Effects free_ & _Synchronous_ function!
+ <br/><br/>
+
+ > #### For this project, my goal is on Managing App-Wide State with _Redux_. <br/>
+ 
+> [!IMPORTANT]
+> _Which Concepts in Have I Covered_:  
+
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Handling Async Tasks with Redux_
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Where to put Side Effects free & Synchronous Codes_
+- Inside the Components via useEffect()
+- Inside the Action Creators 
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _The Redux DevTools_
+ 
+
+<br/>
+
+<!-------- try it live -------->
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Redux ShoppingCart_ </a> 
+
+
+ 
+<!--------- Video --------->
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
+
+
+
+  <br/> 
+  
 <!--======================= Social Media ===========================-->
- ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Detective%20Light%20Skin%20Tone.png" alt="Man Detective Light Skin Tone" width="65" /> Find me around the Web  
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Detective%20Light%20Skin%20Tone.png" alt="Man Detective Light Skin Tone" width="65" /> Find me around the Web  
 <a href="https://www.linkedin.com/in/shahramshakiba/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
   </a> &nbsp;&nbsp;&nbsp;

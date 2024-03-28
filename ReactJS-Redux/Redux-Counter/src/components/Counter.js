@@ -4,8 +4,8 @@ import { counterActions } from '../Store/redux';
 
 export default function Counter() {
   // Get access to data that managed in Redux store
-  const counter = useSelector((state) => state.counter);
-  const showCounter = useSelector((state) => state.showCounter);
+  const counter = useSelector((state) => state.counter.counter);
+  const showCounter = useSelector((state) => state.counter.showCounter);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {

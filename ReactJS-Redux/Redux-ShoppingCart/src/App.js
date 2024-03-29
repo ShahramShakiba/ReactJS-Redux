@@ -5,7 +5,7 @@ import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
 import Notification from './components/UI/Notification';
-import { sendCartData } from './Store/cartSlice';
+import { fetchCartData, sendCartData } from './Store/cartActions';
 
 let isInitial = true;
 
@@ -14,9 +14,13 @@ export default function App() {
   const showCart = useSelector((state) => state.ui.cartOpen);
   const cart = useSelector((state) => state.cart);
   //sets up a subscription to redux | when redux-store changed, this component will be re-executed | we will get the latest state
-  
+
   const notification = useSelector((state) => state.ui.notification);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCartData());
+  }, [dispatch]);
 
   useEffect(() => {
     ///stop initially sending request to firebase

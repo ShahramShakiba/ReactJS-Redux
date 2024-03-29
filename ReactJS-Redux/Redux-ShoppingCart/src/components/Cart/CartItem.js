@@ -23,7 +23,7 @@ export default function CartItem(props) {
         <div className={classes.price}>
           ${total.toFixed(2)} &nbsp;
           <span className={classes.itemPrice}>
-            ( ${price.toFixed(2)} / item )
+            ( ${price.toFixed(2)}/item )
           </span>
         </div>
       </header>

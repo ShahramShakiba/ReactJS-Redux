@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 import Cart from './components/Cart/Cart';
 import Layout from './components/Layout/Layout';
 import Products from './components/Shop/Products';
-import { uiActions } from './Store/uiSlice';
 import Notification from './components/UI/Notification';
+import { sendCartData } from './Store/cartSlice';
 
 let isInitial = true;
 
@@ -14,11 +14,42 @@ export default function App() {
   const showCart = useSelector((state) => state.ui.cartOpen);
   const cart = useSelector((state) => state.cart);
   //sets up a subscription to redux | when redux-store changed, this component will be re-executed | we will get the latest state
-
-  const dispatch = useDispatch();
+  
   const notification = useSelector((state) => state.ui.notification);
+  const dispatch = useDispatch();
 
   useEffect(() => {
+    ///stop initially sending request to firebase
+    if (isInitial) {
+      isInitial = false;
+      return;
+    }
+
+    dispatch(sendCartData(cart));
+  }, [cart, dispatch]);
+
+  return (
+    <>
+      {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
+      )}
+
+      <Layout>
+        {showCart && <Cart />}
+
+        <Products />
+      </Layout>
+    </>
+  );
+}
+
+/* Handling HTTP States & Feedback with Redux inside the COMPONENT
+
+ useEffect(() => {
     const sendCartData = async () => {
       dispatch(
         uiActions.showNotification({
@@ -32,7 +63,7 @@ export default function App() {
         const response = await fetch(
           'https://react-book-shelves-default-rtdb.firebaseio.com/cart.json',
           {
-            //overwriting existing-data or creating a new one if it doesn't exist yet
+            ///overwriting existing-data or creating a new one if it doesn't exist yet
             method: 'PUT',
             body: JSON.stringify(cart),
             headers: {
@@ -63,6 +94,7 @@ export default function App() {
       }
     };
 
+    ///stop initially sending request to firebase
     if (isInitial) {
       isInitial = false;
       return;
@@ -70,22 +102,4 @@ export default function App() {
 
     sendCartData();
   }, [cart, dispatch]);
-
-  return (
-    <>
-      {notification && (
-        <Notification
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
-      )}
-
-      <Layout>
-        {showCart && <Cart />}
-
-        <Products />
-      </Layout>
-    </>
-  );
-}
+*/

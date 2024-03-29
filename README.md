@@ -79,7 +79,7 @@ https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/6fe74162-1203-4
 <!--===================== Redux ShoppingCart =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Redux ShoppingCart_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
 > [!NOTE] 
-> #### In _Redux_, Reducers must be pure, _Side Effects free_ & _Synchronous_ function!
+> #### In _Redux_, Reducers must be pure, _Side Effects free_ & _Synchronous_ functions!
  <br/><br/>
 
  > #### For this project, my goal is on Managing App-Wide State with _Redux_. <br/>
@@ -88,9 +88,18 @@ https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/6fe74162-1203-4
 > _Which Concepts in Have I Covered_:  
 
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Handling Async Tasks with Redux_
-#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Where to put Side Effects free & Synchronous Codes_
+- _Install_:  ` npm install react-redux ` & ` npm install @reduxjs/toolkit `
+- Creating a Redux-Store and Managing UI-Slice & Cart-Slice 
+#### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _Where to put Side-Effects & Synchronous Codes_
 - Inside the Components via useEffect()
-- Inside the Action Creators 
+  - Using useEffect with Redux to send HTTP Request (PUT)
+  - Handling HTTP States & Feedback with Redux <br/><br/>
+- Inside the Action Creators
+  - We can write our own _Action Creators_ to create ` Thunk `:
+    - A function that delays an action until later
+    - An action creator function that does _not return the action itself_ but instead _another function_ which _eventually_ returns the action
+  - Creating & Using an Action Creator Thunk | sendCartData
+  - Creating another Thunk for Fetching Data
 #### <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="18"> &nbsp; _The Redux DevTools_
  
 

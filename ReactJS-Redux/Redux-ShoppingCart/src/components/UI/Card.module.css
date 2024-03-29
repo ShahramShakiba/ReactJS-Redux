@@ -1,10 +1,10 @@
 .card {
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
   border-radius: 6px;
   background-color: rgb(228, 228, 228);
   padding: 1rem 2rem;
-  width: 90%;
-  max-width: 40rem;
+  width: 70%;
+  max-width: 33rem;
   border-radius: 90% / 7%;
   box-shadow: 0 4px 16px rgba(136, 136, 136, 0.3);
 }

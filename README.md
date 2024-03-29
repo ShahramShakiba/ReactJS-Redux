@@ -78,11 +78,9 @@ https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/6fe74162-1203-4
 ***
 <!--===================== Redux ShoppingCart =============================-->
 ### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Laptop.webp" alt="Laptop" width="35" height="30"  /> &nbsp; _Redux ShoppingCart_  <img src="https://skillicons.dev/icons?i=react" height="40" alt="react logo" width="20"  />
-> [!NOTE] 
-> #### In _Redux_, Reducers must be pure, _Side Effects free_ & _Synchronous_ functions!
- <br/><br/>
+- #### In the Redux framework, it is imperative that _Reducers_ adhere to the principles of purity, absence of _Side Effects_, and _Synchronicity_. <br/><br/>
 
- > #### For this project, my goal is on Managing App-Wide State with _Redux_. <br/>
+ > #### For this project, My objective pertains to managing _Side-Effects_ and _Synchronicity_ within the context of _Redux_. <br/>
  
 > [!IMPORTANT]
 > _Which Concepts in Have I Covered_:  
@@ -106,14 +104,15 @@ https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/6fe74162-1203-4
 <br/>
 
 <!-------- try it live -------->
-#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="" target="_blank"> &nbsp; _Redux ShoppingCart_ </a> 
-
+#### _Give it a go in real-time and give me a Star_ &nbsp; <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Glowing%20Star.png" alt="Glowing Star" width="25"  /> <a href="https://redux-shopping-cart-shahram.netlify.app/" target="_blank"> &nbsp; _Redux ShoppingCart_ </a> 
+> [!WARNING] 
+> In certain situations, it might be necessary to employ a ` VPN ` due to the utilization of Firebase.
 
  
 <!--------- Video --------->
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Clapper%20Board.webp" alt="Clapper Board" width="35" />
 
-
+https://github.com/ShahramShakiba/ReactJS-Redux/assets/110089830/b4fc82b6-2a69-4182-9125-2c7decbd611d
 
   <br/> 
   

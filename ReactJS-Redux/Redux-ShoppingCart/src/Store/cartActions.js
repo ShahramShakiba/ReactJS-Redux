@@ -23,8 +23,8 @@ export const fetchCartData = () => {
 
       dispatch(
         cartActions.replaceCart({
-          items: cartData.items || [],
-          totalQuantity: cartData.totalQuantity,
+          items: cartData?.items || [],
+          totalQuantity: cartData?.totalQuantity || 0,
         })
       );
     } catch (error) {

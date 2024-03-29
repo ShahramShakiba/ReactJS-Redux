@@ -9,7 +9,8 @@ export default function CartItem(props) {
         <h3> {title} </h3>
 
         <div className={classes.price}>
-          ${total.toFixed(2)}
+          ${total.toFixed(2)} &nbsp;
+
           <span className={classes.itemPrice}>
             ( ${price.toFixed(2)} / item )
           </span>

@@ -1,9 +1,10 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { uiActions } from '../../Store/uiSlice';
 import classes from './CartButton.module.css';
 
 export default function CartButton() {
   const dispatch = useDispatch();
+  const quantity = useSelector((state) => state.cart.totalQuantity);
 
   const handleCartOpen = () => {
     dispatch(uiActions.toggle());
@@ -13,7 +14,7 @@ export default function CartButton() {
     <button className={classes.button} onClick={handleCartOpen}>
       <span> My Cart </span>
 
-      <span className={classes.badge}> 1 </span>
+      <span className={classes.badge}> {quantity} </span>
     </button>
   );
 }
